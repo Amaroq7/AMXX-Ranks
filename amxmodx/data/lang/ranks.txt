@@ -1,0 +1,23 @@
+[en]
+ADMIN_RELOADED_RANKS = %N reloaded ranks.
+RELOADING_RANKS = Reloading ranks...
+RANKS_MOTD_TITLE = Ranks
+HUD_MSG = Rank: %s^nFrags: %d
+LOOKING_FOR_FILE = Looking for file...
+FILE_NOT_FOUND = Could not find the configuration file (%s)!
+FILE_FOUND = File was found! Loading ranks...
+LIMIT_REACHED = The limit has been reached (%d). Increase ^"MAX_RANKS^" value to load more ranks.
+LOADED_RANK = Loaded ^"%s^" rank.
+LOADED_RANKS = Loaded %d rank(s).
+
+[pl]
+ADMIN_RELOADED_RANKS = %N przeladowal rangi.
+RELOADING_RANKS = Przeladowanie rang...
+RANKS_MOTD_TITLE = Rangi
+HUD_MSG = Ranga: %s^nZabojstwa: %d
+LOOKING_FOR_FILE = Szukanie pliku...
+FILE_NOT_FOUND = Nie znaleziono pliku konfiguracyjnego (%s)!
+FILE_FOUND = Plik znaleziony! Wczytywanie rang...
+LIMIT_REACHED = Limit zostal osiagniety (%d). Zwieksz wartosc^"MAX_RANKS^", aby wczytac wiecej rang.
+LOADED_RANK = Wczytano range ^"%s^".
+LOADED_RANKS = Wczytano %d rang(i).

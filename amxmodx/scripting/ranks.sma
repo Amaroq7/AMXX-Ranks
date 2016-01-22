@@ -138,8 +138,8 @@ public plugin_init()
 
 	AutoExecConfig(true, "ranks");
 
-	hook_cvar_change(g_pCvarDiff, "CvarChanged");
-	hook_cvar_change(g_pCvarRank, "CvarChanged");
+	bind_pcvar_num(g_pCvarRank, g_iCvarRank);
+	bind_pcvar_num(g_pCvarDiff, g_iCvarDiff);
 
 	g_hHud = CreateHudSyncObj();
 
@@ -147,20 +147,6 @@ public plugin_init()
 	
 	LoadRanks();
 	CreateMotd();
-}
-
-public OnConfigsExecuted()
-{
-	g_iCvarDiff = get_pcvar_num(g_pCvarDiff);
-	g_iCvarRank = get_pcvar_num(g_pCvarRank);
-}
-
-public CvarChanged(pcvar, const old_value[], const new_value[])
-{
-	if(pcvar == g_pCvarDiff)
-		g_iCvarDiff = str_to_num(new_value);
-	else
-		g_iCvarRank = str_to_num(new_value);
 }
 
 public ReloadRanks(id, level, cid)

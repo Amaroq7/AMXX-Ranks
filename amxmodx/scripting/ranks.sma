@@ -262,14 +262,9 @@ public LoadPlayerStats(id)
 
 public client_disconnected(id, bool:drop, message[], maxlen)
 {
-	if(task_exists(TASK+id))
-		remove_task(TASK+id)
-
-	if(task_exists(id))
-		remove_task(id);
-	
-	if(NoShowCheck(id))
-		NoShowRemove(id);
+	remove_task(TASK+id)
+	remove_task(id);
+	NoShowRemove(id);
 }
 
 public showRank(param[], tid)
